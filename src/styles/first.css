@@ -1,0 +1,112 @@
+.mainScreen {
+  background-image: url('/public/images/background-shape.svg'), url('/public/images/pexels-vecislavas-popa-1x.jpg');
+  background-repeat: no-repeat;
+  background-size: contain, cover;
+  background-position: bottom, left;
+  height: 700px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+
+  .content {
+    text-align: center;
+    color: #ffffff;
+
+    h1 {
+      font-family: 'Exo 2';
+      font-weight: 700;
+      font-size: min(calc(30px + 5.7vw), 100px);
+      line-height: min(calc(30px + 7vw), 110px);
+      margin-bottom: 3%;
+      white-space: pre-line;
+    }
+
+    p {
+      font-family: 'Ubuntu';
+      font-weight: 700;
+      font-size: min(calc(14px + 1.4vw), 30px);
+    }
+  }
+
+  .filterBox {
+    background: linear-gradient(94.43deg, rgba(249, 249, 249, 0.49) 34.95%, rgba(249, 249, 249, 0.175) 67.01%);
+    backdrop-filter: blur(10px);
+    border-radius: 30px;
+    border: 1px solid lightgray;
+
+    display: flex;
+    column-gap: 2%;
+
+    padding: 1.5vw;
+    width: 79vw;
+    max-width: 940px;
+
+    .filterOption {
+      background: #ffffff;
+      border-radius: 16px;
+      padding: 0.5em 0 0.5em 0.8em;
+      flex: 1 0;
+
+      h5 {
+        font-family: 'Exo 2';
+        font-weight: 400;
+        font-size: min(calc(8px + 0.7vw), 16px);
+        color: #6d6d6d;
+        margin-top: 0;
+        margin-bottom: 0.5em;
+      }
+
+      p {
+        font-family: 'Ubuntu';
+        font-weight: 400;
+        font-size: min(calc(12px + 0.87vw), 22px);
+        margin: 0;
+      }
+    }
+
+    .searchBtn {
+      background: linear-gradient(90deg, #ff594c 0%, #fac527 100%);
+      border-radius: 16px;
+      padding: 0.5em 0 0.5em 0.8em;
+      flex: 1 0;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      p {
+        margin: 0 0 0 0.5em;
+        font-family: 'Ubuntu';
+        font-weight: 500;
+        font-size: min(calc(12px + 1.6vw), 26px);
+        color: #ffffff;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .mainScreen {
+    background-image: url('/public/images/pexels-vecislavas-popa-1x.jpg');
+    background-size: cover;
+    background-position: left;
+
+    .content {
+      margin-top: 10%;
+
+      h1 {
+        margin-bottom: 0;
+      }
+    }
+
+    .filterBox {
+      flex-direction: column;
+      row-gap: 1em;
+      flex-grow: 1 0;
+
+      padding: 3vw;
+    }
+  }
+}

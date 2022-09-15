@@ -1,0 +1,48 @@
+@font-face {
+  font-family: 'Dancing Script';
+  font-style: normal;
+  font-weight: normal;
+  src: url('/public/fonts/dancing-script.regular.ttf') format('OpenType');
+}
+
+@font-face {
+  font-family: 'Exo 2';
+  font-style: normal;
+  font-weight: normal;
+  src: url('/public/fonts/exo2.regular.ttf') format('OpenType');
+}
+
+@font-face {
+  font-family: 'Exo 2';
+  font-style: normal;
+  font-weight: 500;
+  src: url('/public/fonts/exo2.medium.ttf') format('OpenType');
+}
+
+@font-face {
+  font-family: 'Exo 2';
+  font-style: normal;
+  font-weight: 700;
+  src: url('/public/fonts/exo2.bold.ttf') format('OpenType');
+}
+
+@font-face {
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: normal;
+  src: url('/public/fonts/ubuntu.regular.ttf') format('OpenType');
+}
+
+@font-face {
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 500;
+  src: url('/public/fonts/ubuntu.medium.ttf') format('OpenType');
+}
+
+@font-face {
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 700;
+  src: url('/public/fonts/ubuntu.bold.ttf') format('OpenType');
+}
